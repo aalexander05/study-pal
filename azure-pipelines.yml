@@ -12,7 +12,21 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
+
 steps:
+
+- task: UseDotNet@2
+  inputs:
+    version: '6.x'
+
+
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    command: build
+    projects: '**/*.csproj'
+    arguments: '--configuration $(buildConfiguration)' # Update this to match your need
+
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
@@ -20,8 +34,3 @@ steps:
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
 
-# this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)'
-    publishLocation: 'pipeline'
