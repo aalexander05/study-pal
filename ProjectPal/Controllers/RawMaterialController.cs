@@ -20,7 +20,8 @@ namespace ProjectPal.Controllers
         [HttpGet]
         public IEnumerable<RawMaterial> Get()
         {
-            return _projectPalContext.RawMaterials.ToList();
+            var results = _projectPalContext.RawMaterials.ToList();
+            return results;
         }
     }
 }

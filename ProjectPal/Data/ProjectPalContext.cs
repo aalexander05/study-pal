@@ -48,6 +48,6 @@ public class ProjectPalContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=./project-pal.db");
+        optionsBuilder.UseSqlite("Data Source=./Data/project-pal.db");
     }
 }
