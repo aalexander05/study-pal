@@ -1,19 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.IO;
 
 namespace ProjectPal.Data;
 
 public class ProjectPalContext : DbContext
 {
 
-    public string DbPath { get; }
-
-
     public ProjectPalContext(DbContextOptions<ProjectPalContext> options) : base(options)
     {
-        var folder = Environment.SpecialFolder.LocalApplicationData;
-        var path = Environment.GetFolderPath(folder);
-        DbPath = System.IO.Path.Join(path, "project-pal.db");
     }
 
     public DbSet<Project> Projects { get; set; }
@@ -55,17 +48,6 @@ public class ProjectPalContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        // SQL SERVER
-
-        //if (!optionsBuilder.IsConfigured)
-        //{
-
-        //    optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=ProjectPal");
-        //}
-
-
-        // SQLITE
-        optionsBuilder.UseSqlite($"Data Source={DbPath}");
-
+        optionsBuilder.UseSqlite("Data Source=./project-pal.db");
     }
 }
