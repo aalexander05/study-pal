@@ -1,6 +1,8 @@
 using ProjectPal.Data;
 using System.Diagnostics;
 
+var allowedOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,16 +18,32 @@ builder.Services.AddDbContext<ProjectPalContext>(options =>
                 .EnableSensitiveDataLogging();
 });
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: allowedOrigins,
+                      policy =>
+                      {
+                          policy.AllowAnyHeader();
+                          policy.WithOrigins("http://localhost:4200", "https://ashy-stone-0c717d410.3.azurestaticapps.net");
+                      });
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
+
+//if (app.Environment.IsDevelopment())
+//{
+//}
 
 app.UseHttpsRedirection();
+
+app.UseCors(allowedOrigins);
 
 app.UseAuthorization();
 

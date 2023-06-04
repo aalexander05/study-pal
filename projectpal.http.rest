@@ -1,0 +1,39 @@
+
+
+GET https://projectpalapp2.azurewebsites.net/RawMaterial
+
+###
+
+
+GET https://projectpalapp2.azurewebsites.net/Project
+
+
+###
+
+
+
+POST https://projectpalapp2.azurewebsites.net/Project
+Content-Type: application/json
+
+{
+  "createdByUserId": 1,
+  "dateCreated": "2023-06-01T11:38:15.905Z",
+  "modifiedByUserId": 1,
+  "modifiedDate": "2023-06-01T11:38:15.905Z",
+  "createdByUser": {
+    "userId": 1,
+    "fullName": "AJ Alexander"
+  },
+  "modifiedByUser": {
+    "userId": 1,
+    "fullName": "AJ Alexander"
+  },
+  "projectId": 0,
+  "rawMaterials": [
+    {
+      "rawMaterialId": 10,
+      "name": "3/4\" X 4' X 8' plywood",
+      "cost": 27
+    }
+  ]
+}
