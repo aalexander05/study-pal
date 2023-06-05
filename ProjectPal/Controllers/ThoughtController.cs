@@ -51,7 +51,7 @@ public class ThoughtController : ControllerBase
 
         Thought thoughtToSave = _mapper.Map<Thought>(thought);
 
-        thoughtToSave.DateCreated = DateTime.UtcNow;
+        thoughtToSave.DateCreated = DateTimeOffset.UtcNow;
 
         _projectPalContext.Thoughts.Add(thoughtToSave);
         await _projectPalContext.SaveChangesAsync();
