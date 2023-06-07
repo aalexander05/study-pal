@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ProjectPal.Data;
 
-public class ProjectPalContext : DbContext
+public class ProjectPalContext : IdentityDbContext<ApplicationUser>
 {
 
     public ProjectPalContext(DbContextOptions<ProjectPalContext> options) : base(options)
@@ -12,18 +13,11 @@ public class ProjectPalContext : DbContext
 
     public DbSet<Project> Projects { get; set; }
     public DbSet<RawMaterial> RawMaterials { get; set; }
-    public DbSet<User> Users { get; set; }
     public DbSet<Thought> Thoughts { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<User>().HasData(
-            new User()
-            {
-                UserId = 1,
-                FullName = "AJ Alexander"
-            }
-        );
+        
 
         modelBuilder.Entity<RawMaterial>().HasData(
             new RawMaterial()

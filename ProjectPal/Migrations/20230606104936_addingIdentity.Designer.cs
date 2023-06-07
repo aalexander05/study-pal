@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectPal.Data;
 
@@ -10,9 +11,10 @@ using ProjectPal.Data;
 namespace ProjectPal.Migrations
 {
     [DbContext(typeof(ProjectPalContext))]
-    partial class ProjectPalContextModelSnapshot : ModelSnapshot
+    [Migration("20230606104936_addingIdentity")]
+    partial class addingIdentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.16");
@@ -168,9 +170,6 @@ namespace ProjectPal.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("INTEGER");
 
-                    b.Property<bool>("IsAdministrator")
-                        .HasColumnType("INTEGER");
-
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("INTEGER");
 
@@ -295,14 +294,31 @@ namespace ProjectPal.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("UserCreatedId")
-                        .HasColumnType("TEXT");
-
                     b.HasKey("ThoughtId");
 
-                    b.HasIndex("UserCreatedId");
-
                     b.ToTable("Thoughts");
+                });
+
+            modelBuilder.Entity("ProjectPal.Data.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            FullName = "AJ Alexander"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -361,15 +377,6 @@ namespace ProjectPal.Migrations
                     b.HasOne("ProjectPal.Data.Project", null)
                         .WithMany("RawMaterials")
                         .HasForeignKey("ProjectId");
-                });
-
-            modelBuilder.Entity("ProjectPal.Data.Thought", b =>
-                {
-                    b.HasOne("ProjectPal.Data.ApplicationUser", "UserCreated")
-                        .WithMany()
-                        .HasForeignKey("UserCreatedId");
-
-                    b.Navigation("UserCreated");
                 });
 
             modelBuilder.Entity("ProjectPal.Data.Project", b =>

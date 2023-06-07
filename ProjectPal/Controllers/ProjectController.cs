@@ -2,39 +2,38 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProjectPal.Data;
 
-namespace ProjectPal.Controllers
+namespace ProjectPal.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class ProjectController : ControllerBase
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class ProjectController : ControllerBase
+    private readonly ILogger<WeatherForecastController> _logger;
+    private readonly ProjectPalContext _projectPalContext;
+
+    public ProjectController(ILogger<WeatherForecastController> logger,
+        ProjectPalContext projectPalContext)
     {
-        private readonly ILogger<WeatherForecastController> _logger;
-        private readonly ProjectPalContext _projectPalContext;
+        _logger = logger;
+        _projectPalContext = projectPalContext;
+    }
 
-        public ProjectController(ILogger<WeatherForecastController> logger,
-            ProjectPalContext projectPalContext)
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<RawMaterial>>> Get()
+    {
+        var results = await _projectPalContext.Projects.ToListAsync();
+        return Ok(results);
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> Insert([FromBody] Project project)
+    {
+        if (project == null)
         {
-            _logger = logger;
-            _projectPalContext = projectPalContext;
+            return BadRequest();
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<RawMaterial>>> Get()
-        {
-            var results = await _projectPalContext.Projects.ToListAsync();
-            return Ok(results);
-        }
-
-        [HttpPost]
-        public async Task<ActionResult> Insert([FromBody] Project project)
-        {
-            if (project == null)
-            {
-                return BadRequest();
-            }
-
-            await _projectPalContext.Projects.AddAsync(project);
-            return CreatedAtAction("Project", project);
-        }
+        await _projectPalContext.Projects.AddAsync(project);
+        return CreatedAtAction("Project", project);
     }
 }

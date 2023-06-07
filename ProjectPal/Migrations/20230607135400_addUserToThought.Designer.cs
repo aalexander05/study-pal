@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectPal.Data;
 
@@ -10,9 +11,10 @@ using ProjectPal.Data;
 namespace ProjectPal.Migrations
 {
     [DbContext(typeof(ProjectPalContext))]
-    partial class ProjectPalContextModelSnapshot : ModelSnapshot
+    [Migration("20230607135400_addUserToThought")]
+    partial class addUserToThought
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.16");
@@ -166,9 +168,6 @@ namespace ProjectPal.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("IsAdministrator")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("LockoutEnabled")
