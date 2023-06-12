@@ -14,6 +14,7 @@ public class ProjectPalContext : IdentityDbContext<ApplicationUser>
     public DbSet<Project> Projects { get; set; }
     public DbSet<RawMaterial> RawMaterials { get; set; }
     public DbSet<Thought> Thoughts { get; set; }
+    public DbSet<StudySession> StudySessions { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -39,7 +39,7 @@ public class ThoughtController : ControllerBase
 
         IEnumerable<Thought> thoughts =
             user.IsAdministrator ?
-            await _thoughtQueries.GetAllThoughts() :
+            await _thoughtQueries.GetAllThoughtsForAdmin() :
             await _thoughtQueries.GetAllThoughts(user.UserName);
 
         IEnumerable<Dtos.ThoughtForView> response = thoughts.Select(x => _mapper.Map<Dtos.ThoughtForView>(x));
@@ -55,7 +55,7 @@ public class ThoughtController : ControllerBase
 
         IEnumerable<Thought> thoughts =
             user.IsAdministrator ?
-            await _thoughtQueries.GetRecentThoughts() :
+            await _thoughtQueries.GetRecentThoughtsForAdmin() :
             await _thoughtQueries.GetRecentThoughts(user.UserName);
 
         IEnumerable<Dtos.ThoughtForView> response = thoughts.Select(x => _mapper.Map<Dtos.ThoughtForView>(x));

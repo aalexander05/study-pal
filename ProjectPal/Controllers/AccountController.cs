@@ -110,7 +110,10 @@ public class AccountController : ControllerBase
     {
         registerRequest.ReturnUrl ??= Url.Content("~/");
 
-        // TODO Validate
+        if (registerRequest.Password != registerRequest.ConfirmPassword)
+        {
+            return BadRequest("Passwords do not match.");
+        }
 
         ApplicationUser newUser = new();
 
@@ -127,7 +130,7 @@ public class AccountController : ControllerBase
                 ModelState.AddModelError(string.Empty, error.Description);
             }
 
-            string errorMessage = string.Join(",", errors.Select(x => x.Description));
+            string errorMessage = string.Join(" ", errors.Select(x => x.Description));
 
             return BadRequest(errorMessage);
         }

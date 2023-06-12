@@ -12,7 +12,7 @@ public class ThoughtQueries : IThoughtQueries
         _projectPalContext = projectPalContext;
     }
 
-    public async Task<IEnumerable<Thought>> GetAllThoughts()
+    public async Task<IEnumerable<Thought>> GetAllThoughtsForAdmin()
     {
         return await _projectPalContext.Thoughts
             .OrderByDescending(x => x.DateCreated)
@@ -36,7 +36,7 @@ public class ThoughtQueries : IThoughtQueries
             .ToListAsync();
     }
 
-    public async Task<IEnumerable<Thought>> GetRecentThoughts()
+    public async Task<IEnumerable<Thought>> GetRecentThoughtsForAdmin()
     {
         return await _projectPalContext.Thoughts
             .OrderByDescending(x => x.DateCreated)
