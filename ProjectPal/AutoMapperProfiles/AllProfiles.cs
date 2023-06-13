@@ -10,7 +10,7 @@ public class AllProfiles : Profile
         CreateMap<Thought, Dtos.ThoughtForSave>().ReverseMap();
         CreateMap<Thought, Dtos.ThoughtForView>();
 
-        CreateMap<StudySession, Dtos.StudySessionView>();
+        CreateMap<StudySession, Dtos.StudySessionView>().ReverseMap();
         CreateMap<StudySessionLink, Dtos.StudySessionLink>().ReverseMap();
         CreateMap<StudySessionTag, Dtos.StudySessionTag>().ReverseMap();
     }

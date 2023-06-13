@@ -28,7 +28,12 @@ namespace ProjectPal.Queries
 
         public async Task<IEnumerable<StudySession>> GetRecentForUser(string username)
         {
-            throw new NotImplementedException();
+            DateTimeOffset twoWeeksAgo = DateTimeOffset.UtcNow.AddDays(-14);
+
+            return await _projectPalContext.StudySessions
+                .Where(x => x.UserCreated.UserName == username
+                    && x.DateStudied > twoWeeksAgo)
+                .ToListAsync();
         }
     }
 }

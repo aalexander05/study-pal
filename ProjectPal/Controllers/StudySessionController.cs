@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ProjectPal.Commands;
 using ProjectPal.Data;
-using ProjectPal.Dtos;
 using ProjectPal.Queries;
 
 namespace ProjectPal.Controllers;
@@ -44,7 +43,7 @@ public class StudySessionController : ControllerBase
         return Ok(studySessionViews);
     }
 
-    [HttpGet]
+    [HttpGet("Recent")]
     public async Task<ActionResult<IEnumerable<Dtos.StudySessionView>>> GetRecentForUser()
     {
         string username = User?.Identity?.Name ?? throw new System.Exception("No user found");
@@ -66,13 +65,13 @@ public class StudySessionController : ControllerBase
             return BadRequest();
         }
 
-        StudySession sessionToSave = _mapper.Map<StudySession>(studySessionView);
+        StudySession newSessionToSave = _mapper.Map<StudySession>(studySessionView);
 
-        sessionToSave.UserCreated = user;
+        newSessionToSave.UserCreated = user;
 
-        await _studySessionCommands.SaveStudySession(sessionToSave);
+        await _studySessionCommands.SaveStudySession(newSessionToSave);
 
-        return Created("", sessionToSave);
+        return Created("", _mapper.Map<Dtos.StudySessionView>(newSessionToSave) );
     }
 
 }

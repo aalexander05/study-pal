@@ -1,0 +1,34 @@
+# @name login
+POST https://localhost:7053/api/Account/CreateToken
+Content-Type: application/json
+
+{
+  "username": "aalexander05@gmail.com",
+  "password": "P@ssw0rd!",
+  "rememberMe": true,
+  "returnUrl": "string"
+}
+
+###
+
+@token = {{login.response.body.token}}
+
+POST https://localhost:7053/api/StudySession
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "studySessionId": 0,
+  "topic": "Jehovah",
+  "links": [ ],
+  "tags": [ ],
+  "minutesStudied": 15,
+  "notes": "I like Jehovah",
+  "dateStudied": "2023-06-12T06:31:50.392Z"
+}
+
+
+###
+
+GET https://localhost:7053/api/StudySession/Recent
+Authorization: Bearer {{token}}

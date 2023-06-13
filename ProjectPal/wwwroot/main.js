@@ -54,14 +54,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppRoutingModule": () => (/* binding */ AppRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 6679);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ 6679);
 /* harmony import */ var _components_all_thoughts_all_thoughts_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/all-thoughts/all-thoughts.component */ 2161);
 /* harmony import */ var _components_add_thought_add_thought_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/add-thought/add-thought.component */ 5829);
 /* harmony import */ var _components_thought_home_thought_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/thought-home/thought-home.component */ 3941);
 /* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/login/login.component */ 7143);
 /* harmony import */ var _components_logout_logout_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/logout/logout.component */ 430);
 /* harmony import */ var _components_register_register_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/register/register.component */ 3412);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 6839);
+/* harmony import */ var _components_study_session_entry_study_session_entry_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/study-session-entry/study-session-entry.component */ 3544);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 6839);
+
 
 
 
@@ -90,6 +92,9 @@ const routes = [{
   path: 'register',
   component: _components_register_register_component__WEBPACK_IMPORTED_MODULE_5__.RegisterComponent
 }, {
+  path: 'enter-session',
+  component: _components_study_session_entry_study_session_entry_component__WEBPACK_IMPORTED_MODULE_6__.StudySessionEntryComponent
+}, {
   path: '**',
   redirectTo: 'home'
 }];
@@ -97,17 +102,17 @@ class AppRoutingModule {}
 AppRoutingModule.ɵfac = function AppRoutingModule_Factory(t) {
   return new (t || AppRoutingModule)();
 };
-AppRoutingModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({
+AppRoutingModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({
   type: AppRoutingModule
 });
-AppRoutingModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({
-  imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule]
+AppRoutingModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({
+  imports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_8__.RouterModule]
 });
 
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](AppRoutingModule, {
-    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule],
-    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](AppRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__.RouterModule]
   });
 })();
 
@@ -133,7 +138,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const _c0 = ["navBurger"];
 const _c1 = ["navMenu"];
-function AppComponent_div_18_Template(rf, ctx) {
+function AppComponent_div_20_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
@@ -145,21 +150,21 @@ function AppComponent_div_18_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r2.username);
   }
 }
-function AppComponent_a_20_Template(rf, ctx) {
+function AppComponent_a_22_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "a", 16)(1, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Sign up");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
   }
 }
-function AppComponent_a_21_Template(rf, ctx) {
+function AppComponent_a_23_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "a", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " Log in ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
-function AppComponent_a_22_Template(rf, ctx) {
+function AppComponent_a_24_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "a", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " Log out ");
@@ -209,8 +214,8 @@ AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵ
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.navMenu = _t.first);
     }
   },
-  decls: 24,
-  vars: 13,
+  decls: 26,
+  vars: 14,
   consts: [["role", "navigation", "aria-label", "main navigation", 1, "navbar"], [1, "navbar-brand"], ["role", "button", "aria-label", "menu", "aria-expanded", "false", "data-target", "navbarBasicExample", 1, "navbar-burger", 3, "ngClass", "click"], ["navBurger", ""], ["aria-hidden", "true"], ["id", "navbarBasicExample", 1, "navbar-menu", 3, "ngClass"], ["navMenu", ""], [1, "navbar-start"], [1, "navbar-item", 3, "routerLink", "click"], [1, "navbar-end"], [1, "navbar-item"], [4, "ngIf"], [1, "buttons"], ["class", "button is-primary", "href", "/register", 4, "ngIf"], ["class", "button is-light", "href", "/login", 4, "ngIf"], ["class", "button is-light", "href", "/logout", 4, "ngIf"], ["href", "/register", 1, "button", "is-primary"], ["href", "/login", 1, "button", "is-light"], ["href", "/logout", 1, "button", "is-light"]],
   template: function AppComponent_Template(rf, ctx) {
     if (rf & 1) {
@@ -230,30 +235,38 @@ AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵ
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_a_click_12_listener() {
         return ctx.toggleHamburgerMenu();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](13, " Home ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](13, " + Add New Study Session ");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "a", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_a_click_14_listener() {
         return ctx.toggleHamburgerMenu();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](15, " See All Thoughts ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](15, " Home ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "a", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_a_click_16_listener() {
+        return ctx.toggleHamburgerMenu();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](17, " See All Thoughts ");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "div", 9)(17, "div", 10);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](18, AppComponent_div_18_Template, 2, 1, "div", 11);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "div", 12);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](20, AppComponent_a_20_Template, 3, 0, "a", 13);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](21, AppComponent_a_21_Template, 2, 0, "a", 14);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](22, AppComponent_a_22_Template, 2, 0, "a", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 9)(19, "div", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](20, AppComponent_div_20_Template, 2, 1, "div", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "div", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](22, AppComponent_a_22_Template, 3, 0, "a", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](23, AppComponent_a_23_Template, 2, 0, "a", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](24, AppComponent_a_24_Template, 2, 0, "a", 15);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](23, "router-outlet");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](25, "router-outlet");
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](9, _c2, ctx.hamburgerMenuActive));
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](10, _c2, ctx.hamburgerMenuActive));
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](11, _c2, ctx.hamburgerMenuActive));
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](12, _c2, ctx.hamburgerMenuActive));
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("routerLink", "add");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("routerLink", "enter-session");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("routerLink", "thoughts");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
@@ -285,20 +298,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser */ 2512);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common/http */ 3765);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser */ 2512);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/common/http */ 3765);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 158);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _components_thought_home_thought_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/thought-home/thought-home.component */ 3941);
 /* harmony import */ var _components_all_thoughts_all_thoughts_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/all-thoughts/all-thoughts.component */ 2161);
 /* harmony import */ var _components_thought_thought_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/thought/thought.component */ 6923);
 /* harmony import */ var _components_add_thought_add_thought_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/add-thought/add-thought.component */ 5829);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ 9542);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 6839);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/forms */ 9542);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ 6839);
 /* harmony import */ var _app_config_service_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-config-service.service */ 829);
 /* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/login/login.component */ 7143);
 /* harmony import */ var _components_logout_logout_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/logout/logout.component */ 430);
 /* harmony import */ var _components_register_register_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/register/register.component */ 3412);
+/* harmony import */ var _components_study_session_entry_study_session_entry_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/study-session-entry/study-session-entry.component */ 3544);
+
 
 
 
@@ -318,13 +333,13 @@ class AppModule {}
 AppModule.ɵfac = function AppModule_Factory(t) {
   return new (t || AppModule)();
 };
-AppModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineNgModule"]({
+AppModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineNgModule"]({
   type: AppModule,
   bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
 });
-AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjector"]({
+AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjector"]({
   providers: [{
-    provide: _angular_core__WEBPACK_IMPORTED_MODULE_10__.APP_INITIALIZER,
+    provide: _angular_core__WEBPACK_IMPORTED_MODULE_11__.APP_INITIALIZER,
     multi: true,
     deps: [_app_config_service_service__WEBPACK_IMPORTED_MODULE_6__.AppConfigService],
     useFactory: appConfigService => {
@@ -334,13 +349,13 @@ AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵ
       };
     }
   }],
-  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_12__.HttpClientModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule]
+  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_12__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_13__.HttpClientModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.ReactiveFormsModule]
 });
 
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](AppModule, {
-    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _components_thought_home_thought_home_component__WEBPACK_IMPORTED_MODULE_2__.ThoughtHomeComponent, _components_all_thoughts_all_thoughts_component__WEBPACK_IMPORTED_MODULE_3__.AllThoughtsComponent, _components_thought_thought_component__WEBPACK_IMPORTED_MODULE_4__.ThoughtComponent, _components_add_thought_add_thought_component__WEBPACK_IMPORTED_MODULE_5__.AddThoughtComponent, _components_login_login_component__WEBPACK_IMPORTED_MODULE_7__.LoginComponent, _components_logout_logout_component__WEBPACK_IMPORTED_MODULE_8__.LogoutComponent, _components_register_register_component__WEBPACK_IMPORTED_MODULE_9__.RegisterComponent],
-    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_12__.HttpClientModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵsetNgModuleScope"](AppModule, {
+    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _components_thought_home_thought_home_component__WEBPACK_IMPORTED_MODULE_2__.ThoughtHomeComponent, _components_all_thoughts_all_thoughts_component__WEBPACK_IMPORTED_MODULE_3__.AllThoughtsComponent, _components_thought_thought_component__WEBPACK_IMPORTED_MODULE_4__.ThoughtComponent, _components_add_thought_add_thought_component__WEBPACK_IMPORTED_MODULE_5__.AddThoughtComponent, _components_login_login_component__WEBPACK_IMPORTED_MODULE_7__.LoginComponent, _components_logout_logout_component__WEBPACK_IMPORTED_MODULE_8__.LogoutComponent, _components_register_register_component__WEBPACK_IMPORTED_MODULE_9__.RegisterComponent, _components_study_session_entry_study_session_entry_component__WEBPACK_IMPORTED_MODULE_10__.StudySessionEntryComponent],
+    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_12__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_13__.HttpClientModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.ReactiveFormsModule]
   });
 })();
 
@@ -587,21 +602,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function LoginComponent_p_7_Template(rf, ctx) {
+function LoginComponent_p_9_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Email is required");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
-function LoginComponent_p_13_Template(rf, ctx) {
+function LoginComponent_p_15_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Password is required");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
-function LoginComponent_div_18_Template(rf, ctx) {
+function LoginComponent_div_20_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
@@ -655,38 +670,41 @@ LoginComponent.ɵfac = function LoginComponent_Factory(t) {
 LoginComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
   type: LoginComponent,
   selectors: [["app-login"]],
-  decls: 19,
+  decls: 21,
   vars: 4,
-  consts: [[1, "container", "is-max-desktop"], [3, "formGroup"], [1, "field"], [1, "label"], [1, "control"], ["formControlName", "username", "type", "email", "placeholder", "Email input", "value", "hello@", "required", "", 1, "input"], ["class", "help is-danger", 4, "ngIf"], ["formControlName", "password", "type", "password", "placeholder", "Password", "required", "", 1, "input"], [1, "field", "is-grouped"], [1, "button", "is-link", 3, "click"], [4, "ngIf"], [1, "help", "is-danger"]],
+  consts: [[1, "container", "is-max-desktop", "p-6"], [1, "title"], [3, "formGroup"], [1, "field"], [1, "label"], [1, "control"], ["formControlName", "username", "type", "email", "placeholder", "Email input", "value", "hello@", "required", "", 1, "input"], ["class", "help is-danger", 4, "ngIf"], ["formControlName", "password", "type", "password", "placeholder", "Password", "required", "", 1, "input"], [1, "field", "is-grouped"], [1, "button", "is-link", 3, "click"], [4, "ngIf"], [1, "help", "is-danger"]],
   template: function LoginComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "form", 1)(2, "div", 2)(3, "label", 3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, "Email");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "h1", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Login");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "div", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](6, "input", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "form", 2)(4, "div", 3)(5, "label", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6, "Email");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, LoginComponent_p_7_Template, 2, 0, "p", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "div", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](8, "input", 6);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "div", 2)(9, "label", 3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10, "Password");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](9, LoginComponent_p_9_Template, 2, 0, "p", 7);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "div", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](12, "input", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "div", 3)(11, "label", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12, "Password");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](13, LoginComponent_p_13_Template, 2, 0, "p", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "div", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](14, "input", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "div", 8)(15, "div", 4)(16, "button", 9);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function LoginComponent_Template_button_click_16_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](15, LoginComponent_p_15_Template, 2, 0, "p", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "div", 9)(17, "div", 5)(18, "button", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function LoginComponent_Template_button_click_18_listener() {
         return ctx.login();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](17, "Login");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](19, "Submit");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](18, LoginComponent_div_18_Template, 2, 1, "div", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](20, LoginComponent_div_20_Template, 2, 1, "div", 11);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     }
     if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formGroup", ctx.loginForm);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.loginForm.controls["username"].touched && ctx.loginForm.controls["username"].hasError("required"));
@@ -728,7 +746,7 @@ LogoutComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__[
   selectors: [["app-logout"]],
   decls: 5,
   vars: 0,
-  consts: [[1, "content", "container"]],
+  consts: [[1, "content", "container", "p-6"]],
   template: function LogoutComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "h1");
@@ -910,6 +928,153 @@ RegisterComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1_
 
 /***/ }),
 
+/***/ 3544:
+/*!*********************************************************************************!*\
+  !*** ./src/app/components/study-session-entry/study-session-entry.component.ts ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "StudySessionEntryComponent": () => (/* binding */ StudySessionEntryComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ 9542);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 6839);
+/* harmony import */ var src_app_services_study_session_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/services/study-session.service */ 345);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 6679);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 6477);
+
+
+
+
+
+
+
+function StudySessionEntryComponent_div_39_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 19)(1, "button", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function StudySessionEntryComponent_div_39_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r2);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r1.errorMessage = "");
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r0.errorMessage, " ");
+  }
+}
+class StudySessionEntryComponent {
+  constructor(sessionService, router, formBuilder) {
+    this.sessionService = sessionService;
+    this.router = router;
+    this.formBuilder = formBuilder;
+    this.errorMessage = "";
+  }
+  ngOnInit() {
+    this.sessionForm = this.formBuilder.group({
+      studySessionId: [0],
+      topic: [""],
+      links: this.formBuilder.array([]),
+      tags: this.formBuilder.array([]),
+      minutesStudied: [0],
+      notes: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_2__.Validators.required],
+      dateStudied: [new Date()]
+    });
+  }
+  submit() {
+    if (this.sessionForm?.invalid) {
+      this.errorMessage = 'Form invalid';
+      return;
+    }
+    const newSession = this.sessionForm?.value;
+    this.sessionService.saveSession(newSession).subscribe({
+      next: res => {
+        console.log('Session saved.');
+      },
+      error: error => {
+        console.error(error);
+        if (error.status === 400 /* HttpStatusCode.BadRequest */) {
+          this.errorMessage = 'There was a problem submitting your request. Check your entries and try again.';
+        } else if (error.status === 401 /* HttpStatusCode.Unauthorized */) {
+          this.errorMessage = "You are unauthorized. Try logging in.";
+        } else {
+          this.errorMessage = "There was an error. The system must be having a bad day. Try again later.";
+        }
+      }
+    });
+  }
+}
+StudySessionEntryComponent.ɵfac = function StudySessionEntryComponent_Factory(t) {
+  return new (t || StudySessionEntryComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_services_study_session_service__WEBPACK_IMPORTED_MODULE_0__.StudySessionService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormBuilder));
+};
+StudySessionEntryComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
+  type: StudySessionEntryComponent,
+  selectors: [["app-study-session-entry"]],
+  decls: 40,
+  vars: 5,
+  consts: [[1, "m-4"], [1, "container", "is-max-desktop"], [1, "title"], [3, "formGroup"], [1, "columns"], [1, "column"], [1, "field"], [1, "control"], [1, "label"], ["formControlName", "dateStudied", "type", "date", 1, "input", "is-narrow-field"], ["formControlName", "topic", "type", "text", 1, "input"], ["formControlName", "minutesStudied", "type", "number", 1, "input"], ["formControlName", "notes", "placeholder", "Enter your notes about your study session.", "required", "", 1, "textarea"], [1, "level"], [1, "level-left"], [1, "level-right"], [1, "field", "is-grouped"], [1, "button", "is-link", 3, "click"], ["class", "notification is-danger", 4, "ngIf"], [1, "notification", "is-danger"], [1, "delete", 3, "click"]],
+  template: function StudySessionEntryComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "h1", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, "Save New Session");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "form", 3)(5, "div", 4)(6, "div", 5)(7, "div", 6)(8, "div", 7)(9, "label", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10, "Date Studied");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](11, "input", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "div", 5)(13, "div", 6)(14, "div", 7)(15, "label", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](16, "Topic");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](17, "input", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 5)(19, "div", 6)(20, "div", 7)(21, "label", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Minutes Studied");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](23, "input", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "div", 6)(25, "div", 7)(26, "label", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Notes");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](28, "textarea", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "nav", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](30, "div", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "div", 15)(32, "div", 16)(33, "div", 7)(34, "button", 17);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function StudySessionEntryComponent_Template_button_click_34_listener() {
+        return ctx.submit();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Save");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](36, "pre");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](38, "json");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](39, StudySessionEntryComponent_div_39_Template, 3, 1, "div", 18);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formGroup", ctx.sessionForm);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](33);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](38, 3, ctx.sessionForm.value));
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.errorMessage);
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NumberValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControlName, _angular_common__WEBPACK_IMPORTED_MODULE_4__.JsonPipe],
+  encapsulation: 2
+});
+
+
+/***/ }),
+
 /***/ 3941:
 /*!*******************************************************************!*\
   !*** ./src/app/components/thought-home/thought-home.component.ts ***!
@@ -999,7 +1164,7 @@ ThoughtHomeComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4, " My Thoughts! ");
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](5, "p", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](6, " It's a scary place. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](6, " It's a scary place!!!!!!!! ");
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](7, ThoughtHomeComponent_div_7_Template, 2, 1, "div", 5);
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](8, ThoughtHomeComponent_div_8_Template, 2, 1, "div", 6);
@@ -1114,6 +1279,59 @@ LoginService.ɵfac = function LoginService_Factory(t) {
 LoginService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
   token: LoginService,
   factory: LoginService.ɵfac,
+  providedIn: 'root'
+});
+
+
+/***/ }),
+
+/***/ 345:
+/*!***************************************************!*\
+  !*** ./src/app/services/study-session.service.ts ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "StudySessionService": () => (/* binding */ StudySessionService)
+/* harmony export */ });
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ 3765);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 6839);
+/* harmony import */ var _app_config_service_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../app-config-service.service */ 829);
+
+
+
+
+class StudySessionService {
+  get token() {
+    return localStorage.getItem('token');
+  }
+  constructor(httpClient, appConfigService) {
+    this.httpClient = httpClient;
+    this.appConfigService = appConfigService;
+    this.controller = "StudySession";
+    this.requestOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpHeaders({
+        'Authorization': `Bearer ${this.token}`
+      })
+    };
+  }
+  getAllSessions() {
+    return this.httpClient.get(`${this.appConfigService.baseUrl}${this.controller}`, this.requestOptions);
+  }
+  getRecentSessions() {
+    return this.httpClient.get(`${this.appConfigService.baseUrl}${this.controller}/Recent`, this.requestOptions);
+  }
+  saveSession(sessionToSave) {
+    return this.httpClient.post(`${this.appConfigService.baseUrl}${this.controller}`, sessionToSave, this.requestOptions);
+  }
+}
+StudySessionService.ɵfac = function StudySessionService_Factory(t) {
+  return new (t || StudySessionService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_app_config_service_service__WEBPACK_IMPORTED_MODULE_0__.AppConfigService));
+};
+StudySessionService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+  token: StudySessionService,
+  factory: StudySessionService.ɵfac,
   providedIn: 'root'
 });
 

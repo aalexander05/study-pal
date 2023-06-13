@@ -98,6 +98,9 @@ builder.Services.AddCors(options =>
 builder.Services.AddScoped<IThoughtQueries, ThoughtQueries>();
 builder.Services.AddScoped<IThoughtCommands, ThoughtCommands>();
 
+builder.Services.AddScoped<IStudySessionQueries, StudySessionQueries>();
+builder.Services.AddScoped<IStudySessionCommands, StudySessionCommands>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
