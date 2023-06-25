@@ -1,0 +1,27 @@
+
+
+trigger:
+  - master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSource: 'spec'
+    versionSpec: '18.10'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install -g @angular/cli
+    npm install
+    ng build --output-path $(Build.ArtifactStagingDirectory)
+  displayName: 'npm install and build'
+  workingDirectory: '$(Build.SourcesDirectory)'
+  
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'ProjectPalArtifact'
+    publishLocation: 'Container'

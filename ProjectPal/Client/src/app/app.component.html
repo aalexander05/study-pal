@@ -1,0 +1,67 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a 
+      role="button" 
+      class="navbar-burger" 
+      #navBurger
+      (click)="toggleHamburgerMenu()"
+      [ngClass]="{'is-active': hamburgerMenuActive}" 
+      aria-label="menu" 
+      aria-expanded="false" 
+      data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu" #navMenu [ngClass]="{'is-active': hamburgerMenuActive}">
+    <div class="navbar-start">
+      <!-- <a class="navbar-item" [routerLink]="'add'" (click)="onMenuItemSelected()">
+        + Add New
+      </a>
+      
+      <a class="navbar-item" [routerLink]="'thoughts'" (click)="onMenuItemSelected()" >
+        Home
+      </a>
+      
+      <a class="navbar-item" [routerLink]="'all'" (click)="onMenuItemSelected()">
+        See All Thoughts
+      </a> -->
+      
+      <a class="navbar-item" [routerLink]="'enter-session'" (click)="onMenuItemSelected()">
+        + Add New Study Session
+      </a>
+      <a class="navbar-item" [routerLink]="'summary'" (click)="onMenuItemSelected()" >
+        Study Summary
+      </a>
+      <a class="navbar-item" [routerLink]="'study-sessions-all'" (click)="onMenuItemSelected()" >
+        All Study Sessions
+      </a>
+      
+
+
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div *ngIf="token">{{username}}</div>
+        <div class="buttons">
+          <a class="button is-primary" href="/register" *ngIf="!token">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light" href="/login" *ngIf="!token">
+            Log in
+          </a>
+          <a class="button is-light" href="/logout" *ngIf="token">
+            Log out
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,7 @@
+<div class="container is-max-desktop">
+    <div class="content m-4" *ngIf="thoughts">
+        <thought *ngFor="let thought of thoughts" [thought]="thought"></thought>
+    </div>
+
+    <api-error [errorContainer]="errorContainer"></api-error>
+</div>

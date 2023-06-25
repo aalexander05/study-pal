@@ -1,0 +1,25 @@
+<div class="container is-max-desktop">
+    <div class="m-4" *ngIf="studySessions$ | async as studySessions">
+        <table class="table mx-auto">
+            <thead>
+                <tr>
+                    <th>Edit</th>
+                    <th>Date</th>
+                    <th>Topic</th>
+                    <th>Minutes Studied</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let session of studySessions">
+                    <td><a class="button" [routerLink]="['/enter-session/', session.studySessionId]">Edit</a></td>
+                    <td>{{session.dateStudied | date: 'longDate'}}</td>
+                    <td>{{session.topic}}</td>
+                    <td>{{session.minutesStudied}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <api-error [errorContainer]="errorContainer"></api-error>
+
+</div>

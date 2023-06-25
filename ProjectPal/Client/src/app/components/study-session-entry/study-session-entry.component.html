@@ -1,0 +1,68 @@
+
+<div class="container is-max-desktop p-6">
+    <h1 class="title">Save New Session</h1>
+    <form [formGroup]="sessionForm">
+
+        <div class="columns is-multiline">
+            <div class="column is-one-third">
+                <div class="field">
+                    <div class="control">
+                        <label class="label">Date Studied</label>
+                        <input class="input is-narrow-field" formControlName="dateStudied" type="date">
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-quarter">
+                <div class="field">
+                    <div class="control">
+                        <label class="label">Topic</label>
+                        <input 
+                            class="input" 
+                            [class.is-danger]="requiredAndTouched(sessionForm.controls['topic'])"
+                            formControlName="topic" 
+                            type="text" required>
+                    </div>
+                    <p *ngIf="requiredAndTouched(sessionForm.controls['topic'])"
+                        class="help is-danger">Topic is required</p>
+                </div>
+            </div>
+            <div class="column is-one-quarter">
+                <div class="field">
+                    <div class="control">
+                        <label class="label">Minutes Studied</label>
+                        <input class="input" formControlName="minutesStudied" type="number">
+                    </div>
+                </div>
+            </div>
+            <div class="column is-full">
+                <div class="field">
+                    <div class="control">
+                        <label class="label">Notes</label>
+                        <textarea 
+                        rows="8"
+                        class="textarea" 
+                        formControlName="notes"
+                        placeholder="Enter your notes about your study session." 
+                        required></textarea>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <nav class="level">
+            <div class="level-left">
+            </div>
+            <div class="level-right">
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link" (click)="submit()">Save</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </form>
+
+    <api-error [errorContainer]="errorContainer"></api-error>
+
+    <!-- <pre>{{sessionForm.value | json}}</pre> -->
+</div>

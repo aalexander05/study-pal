@@ -1,0 +1,4 @@
+<div class="notification is-danger mt-4" *ngIf="errorContainer.errorMessage">
+    <button class="delete" (click)="errorContainer.clear()"></button>
+    {{errorContainer.errorMessage}}
+</div>

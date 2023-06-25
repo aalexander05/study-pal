@@ -1,0 +1,36 @@
+<div class="container is-max-desktop p-6">
+    <h1 class="title">Login</h1>
+    <form [formGroup]="loginForm">            
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+                <input class="input" formControlName="username" type="email" placeholder="Email input" value="hello@" required>
+            </div>
+        <p class="help is-danger" *ngIf="loginForm.controls['username'].touched && loginForm.controls['username'].hasError('required')">Email is required</p>
+        </div>
+
+        <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+                <input class="input" formControlName="password" type="password" placeholder="Password" required>
+            </div>
+            <!-- <p class="help is-danger" *ngIf="loginForm.password.hasError("email")">This email is invalid</p> -->
+            <p class="help is-danger" *ngIf="loginForm.controls['password'].touched && loginForm.controls['password'].hasError('required')">Password is required</p>
+        </div>
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link" (click)="login()">Submit</button>
+            </div>
+        </div>
+        
+    </form>
+
+    <!-- <pre>valid: {{this.loginForm.valid}}</pre> -->
+
+    <div class="notification is-danger mt-4" *ngIf="errorMessage">
+        <button class="delete" (click)="errorMessage = ''"></button>
+        {{errorMessage}}
+    </div>
+    
+</div>

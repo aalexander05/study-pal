@@ -1,0 +1,42 @@
+<div class="container is-max-desktop p-6">
+    <h1 class="title">Study Summary</h1>
+
+    <api-error [errorContainer]="errorContainer"></api-error>
+
+    <div *ngIf="summary">
+
+        <table *ngIf="summary.numberOfStudySessionsThePastMonth" class="table is-bordered">
+            <tbody>
+                <tr>
+                    <td>Study Sessions The Past Month</td>
+                    <td>{{summary.numberOfStudySessionsThePastMonth}}</td>
+                </tr>
+                <tr>
+                    <td>Minutes Studied The Past Month</td>
+                    <td>{{summary.numberOfMinutesStudiedThePastMonth}}</td>
+
+                </tr>
+                <tr>
+                    <td>Most Studied Topics</td>
+                    <td>
+                        <p>{{summary.mostStudiedTopics.join(", ")}}</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <article *ngIf="!summary?.numberOfStudySessionsThePastMonth && !errorContainer.errorMessage" class="message is-info">
+        <div class="message-body">
+            You do not have any recent study sessions. Please enter one to see your study summary.
+        </div>
+    </article>
+
+
+    <a class="button is-primary mt-4" [routerLink]="'/enter-session'">
+        + Add New Study Session
+    </a>
+
+</div>

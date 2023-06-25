@@ -1,0 +1,33 @@
+<div class="m-4">
+    <div class="container is-max-desktop ">
+        <div class="field">
+            <div class="control">
+            <textarea class="textarea" [(ngModel)]="thoughtText" placeholder="Enter your thought" required></textarea>
+            </div>
+        </div>
+
+        <nav class="level">
+            <div class="level-left">
+
+            </div>
+            <div class="level-right">
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link" (click)="submit()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="notification is-danger" *ngIf="showRequiredMessage">
+            <button class="delete" (click)="showRequiredMessage = false"></button>
+            Please enter a thought before submitting.
+        </div>
+
+        <div class="notification is-danger" *ngIf="errorContainer.errorMessage">
+            <button class="delete" (click)="errorContainer.clear()"></button>
+            {{errorContainer.errorMessage}}
+        </div>
+    </div>
+</div>

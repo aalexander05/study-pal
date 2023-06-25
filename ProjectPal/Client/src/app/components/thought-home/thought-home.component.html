@@ -1,0 +1,20 @@
+<div class="container is-max-desktop">
+    <section class="hero">
+        <div class="hero-body">
+            <p class="title">
+                My Thoughts!
+            </p>
+            <p class="subtitle">
+                It's a scary place!!!!!!!!
+            </p>
+        </div>
+    </section>
+
+    <div *ngIf="errorContainer.errorMessage">
+        {{errorContainer.errorMessage}}
+    </div>
+    
+    <div class="content m-4" *ngIf="thoughts">
+        <thought *ngFor="let thought of thoughts" [thought]="thought"></thought>
+    </div>
+</div>
