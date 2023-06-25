@@ -13,6 +13,14 @@ Content-Type: application/json
 
 @token = {{login.response.body.token}}
 
+
+###
+
+GET https://localhost:7053/api/StudySession/Recent
+Authorization: Bearer {{token}}
+
+###
+
 POST https://localhost:7053/api/StudySession
 Content-Type: application/json
 Authorization: Bearer {{token}}
@@ -27,8 +35,13 @@ Authorization: Bearer {{token}}
   "dateStudied": "2023-06-12T06:31:50.392Z"
 }
 
+###
+
+GET https://localhost:7053/api/StudySession/1
+Authorization: Bearer {{token}}
 
 ###
 
-GET https://localhost:7053/api/StudySession/Recent
+GET https://localhost:7053/api/StudySession/Summary
 Authorization: Bearer {{token}}
+

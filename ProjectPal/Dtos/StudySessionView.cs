@@ -1,8 +1,12 @@
-﻿namespace ProjectPal.Dtos;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ProjectPal.Dtos;
 
 public class StudySessionView
 {
     public int StudySessionId { get; set; }
+
+    [Required]
     public string Topic { get; set; }
     public IEnumerable<StudySessionLink> Links { get; set; }
     public IEnumerable<StudySessionTag> Tags { get; set; }

@@ -17,13 +17,13 @@ public class ThoughtController : ControllerBase
     private readonly IMapper _mapper;
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly IThoughtQueries _thoughtQueries;
-    private readonly IThoughtCommands _thoughtCommands;
+    private readonly ThoughtCommands _thoughtCommands;
 
     public ThoughtController(
         IMapper mapper,
         UserManager<ApplicationUser> userManager,
         IThoughtQueries thoughtQueries,
-        IThoughtCommands thoughtCommands)
+        ThoughtCommands thoughtCommands)
 	{
         _mapper = mapper;
         _userManager = userManager;

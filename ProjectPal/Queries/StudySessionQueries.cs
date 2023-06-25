@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjectPal.Data;
+using ProjectPal.Dtos;
 
 namespace ProjectPal.Queries
 {
@@ -16,6 +17,8 @@ namespace ProjectPal.Queries
         {
             return await _projectPalContext.StudySessions
                 .Where(x => x.UserCreated.UserName == username)
+                .OrderByDescending(x => x.DateStudied)
+                .ThenByDescending(x => x.StudySessionId)
                 .ToListAsync();
         }
 
@@ -26,6 +29,7 @@ namespace ProjectPal.Queries
                 ?? throw new System.Exception("No Study Session record found");
         }
 
+
         public async Task<IEnumerable<StudySession>> GetRecentForUser(string username)
         {
             DateTimeOffset twoWeeksAgo = DateTimeOffset.UtcNow.AddDays(-14);
@@ -33,7 +37,21 @@ namespace ProjectPal.Queries
             return await _projectPalContext.StudySessions
                 .Where(x => x.UserCreated.UserName == username
                     && x.DateStudied > twoWeeksAgo)
+                .OrderByDescending(x => x.DateStudied)
+                .ThenByDescending(x => x.StudySessionId)
+                .Take(10)
                 .ToListAsync();
         }
+
+
+        public async Task<IEnumerable<StudySession>> GetForSummaryForUser(string username)
+        {
+            DateTimeOffset thirtyDaysAgo = DateTimeOffset.UtcNow.AddDays(-30);
+
+            return await _projectPalContext.StudySessions
+                .Where(x => x.DateStudied > thirtyDaysAgo && x.UserCreated.UserName == username)
+                .ToListAsync();
+        }
+
     }
 }

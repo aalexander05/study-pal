@@ -100,7 +100,7 @@ public class AccountController : ControllerBase
             _config["Tokens:Issuer"],
             _config["Tokens:Audience"],
             claims,
-            expires: DateTime.UtcNow.AddMinutes(30),
+            expires: DateTime.UtcNow.AddMinutes(240),
             signingCredentials: creds);
         return token;
     }

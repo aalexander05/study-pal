@@ -9,6 +9,7 @@ using ProjectPal.Queries;
 using ProjectPal.Commands;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using ProjectPal;
 
 var allowedOrigins = "_myAllowSpecificOrigins";
 
@@ -95,11 +96,8 @@ builder.Services.AddCors(options =>
                       });
 });
 
-builder.Services.AddScoped<IThoughtQueries, ThoughtQueries>();
-builder.Services.AddScoped<IThoughtCommands, ThoughtCommands>();
+builder.Services.AddApplicationServices();
 
-builder.Services.AddScoped<IStudySessionQueries, StudySessionQueries>();
-builder.Services.AddScoped<IStudySessionCommands, StudySessionCommands>();
 
 var app = builder.Build();
 

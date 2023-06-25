@@ -1,21 +1,20 @@
 ﻿using ProjectPal.Data;
-using ProjectPal.Dtos;
 
-namespace ProjectPal.Commands
+namespace ProjectPal.Commands;
+
+[Service]
+public class ThoughtCommands
 {
-    public class ThoughtCommands : IThoughtCommands
+    private readonly ProjectPalContext _projectPalContext;
+
+    public ThoughtCommands(ProjectPalContext projectPalContext)
     {
-        private readonly ProjectPalContext _projectPalContext;
+        this._projectPalContext = projectPalContext;
+    }
 
-        public ThoughtCommands(ProjectPalContext projectPalContext)
-        {
-            this._projectPalContext = projectPalContext;
-        }
-
-        public async Task SaveThought(Thought thought)
-        {
-            _projectPalContext.Thoughts.Add(thought);
-            await _projectPalContext.SaveChangesAsync();
-        }
+    public async Task SaveThought(Thought thought)
+    {
+        _projectPalContext.Thoughts.Add(thought);
+        await _projectPalContext.SaveChangesAsync();
     }
 }
