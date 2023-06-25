@@ -16,7 +16,6 @@ export class StudySessionService {
   constructor(private httpClient: HttpClient,
     private appConfigService: AppConfigService) { }
 
-  // hello, world
 
   getAllSessions(): Observable<StudySessionView[]> {
     return this.httpClient.get<StudySessionView[]>(`${this.appConfigService.baseUrl}${this.controller}`);
