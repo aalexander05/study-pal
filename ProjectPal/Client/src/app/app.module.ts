@@ -20,6 +20,7 @@ import { StudySummaryComponent } from './components/study-summary/study-summary.
 import { ApiErrorComponent } from './components/api-error/api-error.component';
 import { JwtHelperService, JWT_OPTIONS  } from '@auth0/angular-jwt';
 import { AuthInterceptorService } from './services/auth-interceptor.service';
+import { DeleteSessionModalComponent } from './components/study-session-entry/delete-session-modal/delete-session-modal.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { AuthInterceptorService } from './services/auth-interceptor.service';
     StudySessionEntryComponent,
     AllStudySessionsComponent,
     StudySummaryComponent,
-    ApiErrorComponent
+    ApiErrorComponent,
+    DeleteSessionModalComponent
   ],
   imports: [
     BrowserModule,

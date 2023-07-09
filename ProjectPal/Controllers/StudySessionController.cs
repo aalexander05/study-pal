@@ -44,7 +44,7 @@ public class StudySessionController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<IEnumerable<Dtos.StudySessionView>>> GetRecentForUser(int id)
+    public async Task<ActionResult<IEnumerable<Dtos.StudySessionView>>> GetByIdForUser(int id)
     {
         string username = User?.Identity?.Name ?? throw new System.Exception("No user found");
 
@@ -142,6 +142,18 @@ public class StudySessionController : ControllerBase
         };
 
         return Ok(summary);
+    }
+
+    [HttpDelete("{studySessionId}")]
+    public async Task<ActionResult> DeleteStudySession([FromRoute] int studySessionId)
+    {
+        string username = User?.Identity?.Name ?? throw new System.Exception("No user found");
+
+        StudySession studySession = await _studySessionQueries.GetByIdForUser(studySessionId, username);
+
+        await _studySessionCommands.DeleteStudySession(studySession);
+
+        return Ok();
     }
 
 }

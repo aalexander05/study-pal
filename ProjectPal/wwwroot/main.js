@@ -61,7 +61,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_study_session_entry_study_session_entry_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/study-session-entry/study-session-entry.component */ 3544);
 /* harmony import */ var _components_all_study_sessions_all_study_sessions_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/all-study-sessions/all-study-sessions.component */ 3942);
 /* harmony import */ var _components_study_summary_study_summary_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/study-summary/study-summary.component */ 560);
-/* harmony import */ var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/auth-guard.service */ 968);
+/* harmony import */ var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/auth-guard.service */ 8968);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 6839);
 
 
@@ -146,7 +146,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const _c0 = ["navBurger"];
 const _c1 = ["navMenu"];
-function AppComponent_div_18_Template(rf, ctx) {
+function AppComponent_div_20_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
@@ -158,23 +158,23 @@ function AppComponent_div_18_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r2.username);
   }
 }
-function AppComponent_a_20_Template(rf, ctx) {
+function AppComponent_a_22_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "a", 16)(1, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "a", 18)(1, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Sign up");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
   }
 }
-function AppComponent_a_21_Template(rf, ctx) {
+function AppComponent_a_23_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "a", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "a", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " Log in ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
-function AppComponent_a_22_Template(rf, ctx) {
+function AppComponent_a_24_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "a", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "a", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " Log out ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
@@ -226,46 +226,49 @@ AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵ
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.navMenu = _t.first);
     }
   },
-  decls: 24,
+  decls: 26,
   vars: 13,
-  consts: [["role", "navigation", "aria-label", "main navigation", 1, "navbar"], [1, "navbar-brand"], ["role", "button", "aria-label", "menu", "aria-expanded", "false", "data-target", "navbarBasicExample", 1, "navbar-burger", 3, "ngClass", "click"], ["navBurger", ""], ["aria-hidden", "true"], ["id", "navbarBasicExample", 1, "navbar-menu", 3, "ngClass"], ["navMenu", ""], [1, "navbar-start"], [1, "navbar-item", 3, "routerLink", "click"], [1, "navbar-end"], [1, "navbar-item"], [4, "ngIf"], [1, "buttons"], ["class", "button is-primary", "href", "/register", 4, "ngIf"], ["class", "button is-light", "href", "/login", 4, "ngIf"], ["class", "button is-light", "href", "/logout", 4, "ngIf"], ["href", "/register", 1, "button", "is-primary"], ["href", "/login", 1, "button", "is-light"], ["href", "/logout", 1, "button", "is-light"]],
+  consts: [["role", "navigation", "aria-label", "main navigation", 1, "navbar"], [1, "navbar-brand"], ["href", "/", 1, "navbar-item"], ["src", "/assets/images/book.svg", "width", "32", "height", "28"], ["role", "button", "aria-label", "menu", "aria-expanded", "false", "data-target", "navbarBasicExample", 1, "navbar-burger", 3, "ngClass", "click"], ["navBurger", ""], ["aria-hidden", "true"], ["id", "navbarBasicExample", 1, "navbar-menu", 3, "ngClass"], ["navMenu", ""], [1, "navbar-start"], [1, "navbar-item", 3, "routerLink", "click"], [1, "navbar-end"], [1, "navbar-item"], [4, "ngIf"], [1, "buttons"], ["class", "button is-primary", "href", "/register", 4, "ngIf"], ["class", "button is-light", "href", "/login", 4, "ngIf"], ["class", "button is-light", "href", "/logout", 4, "ngIf"], ["href", "/register", 1, "button", "is-primary"], ["href", "/login", 1, "button", "is-light"], ["href", "/logout", 1, "button", "is-light"]],
   template: function AppComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nav", 0)(1, "div", 1)(2, "a", 2, 3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_a_click_2_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nav", 0)(1, "div", 1)(2, "a", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "img", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "a", 4, 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_a_click_4_listener() {
         return ctx.toggleHamburgerMenu();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "span", 4)(5, "span", 4)(6, "span", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](6, "span", 6)(7, "span", 6)(8, "span", 6);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "div", 5, 6)(9, "div", 7)(10, "a", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_a_click_10_listener() {
-        return ctx.onMenuItemSelected();
-      });
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](11, " + Add New Study Session ");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "a", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "div", 7, 8)(11, "div", 9)(12, "a", 10);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_a_click_12_listener() {
         return ctx.onMenuItemSelected();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](13, " Study Summary ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](13, " + Add New Study Session ");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "a", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "a", 10);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_a_click_14_listener() {
         return ctx.onMenuItemSelected();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](15, " All Study Sessions ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](15, " Study Summary ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "a", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_a_click_16_listener() {
+        return ctx.onMenuItemSelected();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](17, " All Study Sessions ");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "div", 9)(17, "div", 10);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](18, AppComponent_div_18_Template, 2, 1, "div", 11);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "div", 12);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](20, AppComponent_a_20_Template, 3, 0, "a", 13);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](21, AppComponent_a_21_Template, 2, 0, "a", 14);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](22, AppComponent_a_22_Template, 2, 0, "a", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 11)(19, "div", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](20, AppComponent_div_20_Template, 2, 1, "div", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "div", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](22, AppComponent_a_22_Template, 3, 0, "a", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](23, AppComponent_a_23_Template, 2, 0, "a", 16);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](24, AppComponent_a_24_Template, 2, 0, "a", 17);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](23, "router-outlet");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](25, "router-outlet");
     }
     if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](9, _c2, ctx.hamburgerMenuActive));
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](11, _c2, ctx.hamburgerMenuActive));
@@ -302,16 +305,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/platform-browser */ 2512);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/common/http */ 3765);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/platform-browser */ 2512);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common/http */ 3765);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 158);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _components_thought_home_thought_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/thought-home/thought-home.component */ 3941);
 /* harmony import */ var _components_all_thoughts_all_thoughts_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/all-thoughts/all-thoughts.component */ 2161);
 /* harmony import */ var _components_thought_thought_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/thought/thought.component */ 6923);
 /* harmony import */ var _components_add_thought_add_thought_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/add-thought/add-thought.component */ 5829);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/forms */ 9542);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/core */ 6839);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/forms */ 9542);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/core */ 6839);
 /* harmony import */ var _app_config_service_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-config-service.service */ 829);
 /* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/login/login.component */ 7143);
 /* harmony import */ var _components_logout_logout_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/logout/logout.component */ 430);
@@ -320,8 +323,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_all_study_sessions_all_study_sessions_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/all-study-sessions/all-study-sessions.component */ 3942);
 /* harmony import */ var _components_study_summary_study_summary_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/study-summary/study-summary.component */ 560);
 /* harmony import */ var _components_api_error_api_error_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/api-error/api-error.component */ 6596);
-/* harmony import */ var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @auth0/angular-jwt */ 467);
-/* harmony import */ var _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./services/auth-interceptor.service */ 993);
+/* harmony import */ var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @auth0/angular-jwt */ 4467);
+/* harmony import */ var _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./services/auth-interceptor.service */ 2993);
+/* harmony import */ var _components_study_session_entry_delete_session_modal_delete_session_modal_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/study-session-entry/delete-session-modal/delete-session-modal.component */ 6106);
+
 
 
 
@@ -347,13 +352,13 @@ class AppModule {}
 AppModule.ɵfac = function AppModule_Factory(t) {
   return new (t || AppModule)();
 };
-AppModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineNgModule"]({
+AppModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineNgModule"]({
   type: AppModule,
   bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
 });
-AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineInjector"]({
+AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineInjector"]({
   providers: [{
-    provide: _angular_core__WEBPACK_IMPORTED_MODULE_15__.APP_INITIALIZER,
+    provide: _angular_core__WEBPACK_IMPORTED_MODULE_16__.APP_INITIALIZER,
     multi: true,
     deps: [_app_config_service_service__WEBPACK_IMPORTED_MODULE_6__.AppConfigService],
     useFactory: appConfigService => {
@@ -363,20 +368,20 @@ AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵ
       };
     }
   }, {
-    provide: _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_16__.JWT_OPTIONS,
-    useValue: _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_16__.JWT_OPTIONS
-  }, _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_16__.JwtHelperService, {
-    provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_17__.HTTP_INTERCEPTORS,
+    provide: _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_17__.JWT_OPTIONS,
+    useValue: _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_17__.JWT_OPTIONS
+  }, _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_17__.JwtHelperService, {
+    provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HTTP_INTERCEPTORS,
     useClass: _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_14__.AuthInterceptorService,
     multi: true
   }],
-  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_18__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_17__.HttpClientModule, _angular_forms__WEBPACK_IMPORTED_MODULE_19__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_19__.ReactiveFormsModule]
+  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpClientModule, _angular_forms__WEBPACK_IMPORTED_MODULE_20__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_20__.ReactiveFormsModule]
 });
 
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵsetNgModuleScope"](AppModule, {
-    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _components_thought_home_thought_home_component__WEBPACK_IMPORTED_MODULE_2__.ThoughtHomeComponent, _components_all_thoughts_all_thoughts_component__WEBPACK_IMPORTED_MODULE_3__.AllThoughtsComponent, _components_thought_thought_component__WEBPACK_IMPORTED_MODULE_4__.ThoughtComponent, _components_add_thought_add_thought_component__WEBPACK_IMPORTED_MODULE_5__.AddThoughtComponent, _components_login_login_component__WEBPACK_IMPORTED_MODULE_7__.LoginComponent, _components_logout_logout_component__WEBPACK_IMPORTED_MODULE_8__.LogoutComponent, _components_register_register_component__WEBPACK_IMPORTED_MODULE_9__.RegisterComponent, _components_study_session_entry_study_session_entry_component__WEBPACK_IMPORTED_MODULE_10__.StudySessionEntryComponent, _components_all_study_sessions_all_study_sessions_component__WEBPACK_IMPORTED_MODULE_11__.AllStudySessionsComponent, _components_study_summary_study_summary_component__WEBPACK_IMPORTED_MODULE_12__.StudySummaryComponent, _components_api_error_api_error_component__WEBPACK_IMPORTED_MODULE_13__.ApiErrorComponent],
-    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_18__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_17__.HttpClientModule, _angular_forms__WEBPACK_IMPORTED_MODULE_19__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_19__.ReactiveFormsModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵsetNgModuleScope"](AppModule, {
+    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _components_thought_home_thought_home_component__WEBPACK_IMPORTED_MODULE_2__.ThoughtHomeComponent, _components_all_thoughts_all_thoughts_component__WEBPACK_IMPORTED_MODULE_3__.AllThoughtsComponent, _components_thought_thought_component__WEBPACK_IMPORTED_MODULE_4__.ThoughtComponent, _components_add_thought_add_thought_component__WEBPACK_IMPORTED_MODULE_5__.AddThoughtComponent, _components_login_login_component__WEBPACK_IMPORTED_MODULE_7__.LoginComponent, _components_logout_logout_component__WEBPACK_IMPORTED_MODULE_8__.LogoutComponent, _components_register_register_component__WEBPACK_IMPORTED_MODULE_9__.RegisterComponent, _components_study_session_entry_study_session_entry_component__WEBPACK_IMPORTED_MODULE_10__.StudySessionEntryComponent, _components_all_study_sessions_all_study_sessions_component__WEBPACK_IMPORTED_MODULE_11__.AllStudySessionsComponent, _components_study_summary_study_summary_component__WEBPACK_IMPORTED_MODULE_12__.StudySummaryComponent, _components_api_error_api_error_component__WEBPACK_IMPORTED_MODULE_13__.ApiErrorComponent, _components_study_session_entry_delete_session_modal_delete_session_modal_component__WEBPACK_IMPORTED_MODULE_15__.DeleteSessionModalComponent],
+    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpClientModule, _angular_forms__WEBPACK_IMPORTED_MODULE_20__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_20__.ReactiveFormsModule]
   });
 })();
 
@@ -1181,6 +1186,74 @@ RegisterComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1_
 
 /***/ }),
 
+/***/ 6106:
+/*!*******************************************************************************************************!*\
+  !*** ./src/app/components/study-session-entry/delete-session-modal/delete-session-modal.component.ts ***!
+  \*******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DeleteSessionModalComponent": () => (/* binding */ DeleteSessionModalComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 6839);
+
+
+class DeleteSessionModalComponent {
+  constructor() {
+    this.onClose = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+  }
+  deleteStudySession() {
+    this.onClose.emit(true);
+  }
+  closeModal() {
+    this.onClose.emit(false);
+  }
+}
+DeleteSessionModalComponent.ɵfac = function DeleteSessionModalComponent_Factory(t) {
+  return new (t || DeleteSessionModalComponent)();
+};
+DeleteSessionModalComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: DeleteSessionModalComponent,
+  selectors: [["app-delete-session-modal"]],
+  outputs: {
+    onClose: "onClose"
+  },
+  decls: 15,
+  vars: 0,
+  consts: [["id", "delete-modal", 1, "modal", "is-active"], [1, "modal-background"], [1, "modal-content"], [1, "box", "m-5"], [1, "mb-4"], [1, "level-right"], [1, "field", "is-grouped"], [1, "control"], [1, "button", 3, "click"], [1, "button", "is-success", 3, "click"], ["aria-label", "close", 1, "modal-close", "is-large", 3, "click"]],
+  template: function DeleteSessionModalComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2)(3, "div", 3)(4, "p", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Are you sure you want to delete this study session?");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 5)(7, "div", 6)(8, "div", 7)(9, "button", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DeleteSessionModalComponent_Template_button_click_9_listener() {
+        return ctx.closeModal();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "No");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 7)(12, "button", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DeleteSessionModalComponent_Template_button_click_12_listener() {
+        return ctx.deleteStudySession();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Yes");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "button", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DeleteSessionModalComponent_Template_button_click_14_listener() {
+        return ctx.closeModal();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+    }
+  },
+  encapsulation: 2
+});
+
+
+/***/ }),
+
 /***/ 3544:
 /*!*********************************************************************************!*\
   !*** ./src/app/components/study-session-entry/study-session-entry.component.ts ***!
@@ -1191,14 +1264,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "StudySessionEntryComponent": () => (/* binding */ StudySessionEntryComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ 9542);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ 9542);
 /* harmony import */ var src_app_classes_errorContainer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/classes/errorContainer */ 3322);
 /* harmony import */ var src_app_classes_errorHandler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/classes/errorHandler */ 1959);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 6839);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 6839);
 /* harmony import */ var src_app_services_study_session_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/study-session.service */ 345);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ 6679);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ 6477);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 6679);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 6477);
 /* harmony import */ var _api_error_api_error_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api-error/api-error.component */ 6596);
+/* harmony import */ var _delete_session_modal_delete_session_modal_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./delete-session-modal/delete-session-modal.component */ 6106);
+
 
 
 
@@ -1210,9 +1285,34 @@ __webpack_require__.r(__webpack_exports__);
 
 function StudySessionEntryComponent_p_17_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "p", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1, "Topic is required");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "p", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Topic is required");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+  }
+}
+function StudySessionEntryComponent_div_34_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 6)(1, "button", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function StudySessionEntryComponent_div_34_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r4);
+      const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r3.openModal());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](2, "Delete");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
+  }
+}
+function StudySessionEntryComponent_app_delete_session_modal_39_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "app-delete-session-modal", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("onClose", function StudySessionEntryComponent_app_delete_session_modal_39_Template_app_delete_session_modal_onClose_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r6);
+      const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r5.handleModalClose($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
   }
 }
 class StudySessionEntryComponent {
@@ -1222,15 +1322,16 @@ class StudySessionEntryComponent {
     this.route = route;
     this.formBuilder = formBuilder;
     this.errorContainer = new src_app_classes_errorContainer__WEBPACK_IMPORTED_MODULE_0__.ErrorContainer();
+    this.showModal = false;
   }
   ngOnInit() {
     this.sessionForm = this.formBuilder.group({
       studySessionId: [0],
-      topic: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required],
+      topic: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required],
       links: this.formBuilder.array([]),
       tags: this.formBuilder.array([]),
       minutesStudied: [0],
-      notes: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required],
+      notes: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required],
       dateStudied: [new Date().toISOString().slice(0, -14)]
     });
     const studySessionId = this.route.snapshot.paramMap.get('id');
@@ -1267,66 +1368,95 @@ class StudySessionEntryComponent {
   requiredAndTouched(control) {
     return control.hasError("required") && control.touched;
   }
+  isUpdate() {
+    return this.sessionForm?.controls['studySessionId'].value > 0;
+  }
+  openModal() {
+    this.showModal = true;
+  }
+  handleModalClose(deleteSession) {
+    this.showModal = false;
+    if (deleteSession) {
+      this.deleteStudySession();
+    }
+  }
+  deleteStudySession() {
+    this.sessionService.deleteSession(this.sessionForm.controls['studySessionId'].value).subscribe({
+      next: res => {
+        this.router.navigate(["summary"]);
+      },
+      error: error => {
+        (0,src_app_classes_errorHandler__WEBPACK_IMPORTED_MODULE_1__.handleError)(error, this.errorContainer);
+      }
+    });
+  }
 }
 StudySessionEntryComponent.ɵfac = function StudySessionEntryComponent_Factory(t) {
-  return new (t || StudySessionEntryComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](src_app_services_study_session_service__WEBPACK_IMPORTED_MODULE_2__.StudySessionService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormBuilder));
+  return new (t || StudySessionEntryComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](src_app_services_study_session_service__WEBPACK_IMPORTED_MODULE_2__.StudySessionService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormBuilder));
 };
-StudySessionEntryComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({
+StudySessionEntryComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({
   type: StudySessionEntryComponent,
   selectors: [["app-study-session-entry"]],
-  decls: 38,
-  vars: 5,
-  consts: [[1, "container", "is-max-desktop", "p-6"], [1, "title"], [3, "formGroup"], [1, "columns", "is-multiline"], [1, "column", "is-one-third"], [1, "field"], [1, "control"], [1, "label"], ["formControlName", "dateStudied", "type", "date", 1, "input", "is-narrow-field"], [1, "column", "is-one-quarter"], ["formControlName", "topic", "type", "text", "required", "", 1, "input"], ["class", "help is-danger", 4, "ngIf"], ["formControlName", "minutesStudied", "type", "number", 1, "input"], [1, "column", "is-full"], ["rows", "8", "formControlName", "notes", "placeholder", "Enter your notes about your study session.", "required", "", 1, "textarea"], [1, "level"], [1, "level-left"], [1, "level-right"], [1, "field", "is-grouped"], [1, "button", "is-link", 3, "click"], [3, "errorContainer"], [1, "help", "is-danger"]],
+  decls: 40,
+  vars: 7,
+  consts: [[1, "container", "is-max-desktop", "p-6"], [1, "title"], [3, "formGroup"], [1, "columns", "is-multiline"], [1, "column", "is-one-third"], [1, "field"], [1, "control"], [1, "label"], ["formControlName", "dateStudied", "type", "date", 1, "input", "is-narrow-field"], [1, "column", "is-one-quarter"], ["formControlName", "topic", "type", "text", "required", "", 1, "input"], ["class", "help is-danger", 4, "ngIf"], ["formControlName", "minutesStudied", "type", "number", 1, "input"], [1, "column", "is-full"], ["rows", "8", "formControlName", "notes", "placeholder", "Enter your notes about your study session.", "required", "", 1, "textarea"], [1, "level"], [1, "level-left"], [1, "level-right"], [1, "field", "is-grouped"], ["class", "control", 4, "ngIf"], [1, "button", "is-link", 3, "click"], [3, "errorContainer"], [3, "onClose", 4, "ngIf"], [1, "help", "is-danger"], ["data-target", "delete-modal", 1, "button", "is-danger", "js-modal-trigger", 3, "click"], [3, "onClose"]],
   template: function StudySessionEntryComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "h1", 1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2, "Save New Session");
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "form", 2)(4, "div", 3)(5, "div", 4)(6, "div", 5)(7, "div", 6)(8, "label", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](9, "Date Studied");
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](10, "input", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](11, "div", 9)(12, "div", 5)(13, "div", 6)(14, "label", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](15, "Topic");
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](16, "input", 10);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](17, StudySessionEntryComponent_p_17_Template, 2, 0, "p", 11);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](18, "div", 9)(19, "div", 5)(20, "div", 6)(21, "label", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](22, "Minutes Studied");
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](23, "input", 12);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](24, "div", 13)(25, "div", 5)(26, "div", 6)(27, "label", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](28, "Notes");
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](29, "textarea", 14);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](30, "nav", 15);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](31, "div", 16);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](32, "div", 17)(33, "div", 18)(34, "div", 6)(35, "button", 19);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function StudySessionEntryComponent_Template_button_click_35_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 0)(1, "h1", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](2, "Save New Session");
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](3, "form", 2)(4, "div", 3)(5, "div", 4)(6, "div", 5)(7, "div", 6)(8, "label", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](9, "Date Studied");
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](10, "input", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](11, "div", 9)(12, "div", 5)(13, "div", 6)(14, "label", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](15, "Topic");
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](16, "input", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](17, StudySessionEntryComponent_p_17_Template, 2, 0, "p", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](18, "div", 9)(19, "div", 5)(20, "div", 6)(21, "label", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](22, "Minutes Studied");
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](23, "input", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](24, "div", 13)(25, "div", 5)(26, "div", 6)(27, "label", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](28, "Notes");
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](29, "textarea", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](30, "nav", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](31, "div", 16);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](32, "div", 17)(33, "div", 18);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](34, StudySessionEntryComponent_div_34_Template, 3, 0, "div", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](35, "div", 6)(36, "button", 20);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function StudySessionEntryComponent_Template_button_click_36_listener() {
         return ctx.submit();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](36, "Save");
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](37, "api-error", 20);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](37, "Save");
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](38, "api-error", 21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](39, StudySessionEntryComponent_app_delete_session_modal_39_Template, 1, 0, "app-delete-session-modal", 22);
     }
     if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("formGroup", ctx.sessionForm);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](13);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵclassProp"]("is-danger", ctx.requiredAndTouched(ctx.sessionForm.controls["topic"]));
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.requiredAndTouched(ctx.sessionForm.controls["topic"]));
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](20);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("errorContainer", ctx.errorContainer);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("formGroup", ctx.sessionForm);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵclassProp"]("is-danger", ctx.requiredAndTouched(ctx.sessionForm.controls["topic"]));
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.requiredAndTouched(ctx.sessionForm.controls["topic"]));
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](17);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.isUpdate());
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("errorContainer", ctx.errorContainer);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showModal);
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NumberValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormControlName, _api_error_api_error_component__WEBPACK_IMPORTED_MODULE_3__.ApiErrorComponent],
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NumberValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormControlName, _api_error_api_error_component__WEBPACK_IMPORTED_MODULE_3__.ApiErrorComponent, _delete_session_modal_delete_session_modal_component__WEBPACK_IMPORTED_MODULE_4__.DeleteSessionModalComponent],
   encapsulation: 2
 });
 
@@ -1625,7 +1755,7 @@ ThoughtComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__
 
 /***/ }),
 
-/***/ 968:
+/***/ 8968:
 /*!************************************************!*\
   !*** ./src/app/services/auth-guard.service.ts ***!
   \************************************************/
@@ -1636,7 +1766,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AuthGuardService": () => (/* binding */ AuthGuardService)
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 6839);
-/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./auth.service */ 556);
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./auth.service */ 7556);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 6679);
 
 
@@ -1666,7 +1796,7 @@ AuthGuardService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1_
 
 /***/ }),
 
-/***/ 993:
+/***/ 2993:
 /*!******************************************************!*\
   !*** ./src/app/services/auth-interceptor.service.ts ***!
   \******************************************************/
@@ -1703,7 +1833,7 @@ AuthInterceptorService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MOD
 
 /***/ }),
 
-/***/ 556:
+/***/ 7556:
 /*!******************************************!*\
   !*** ./src/app/services/auth.service.ts ***!
   \******************************************/
@@ -1714,7 +1844,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AuthService": () => (/* binding */ AuthService)
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 6839);
-/* harmony import */ var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @auth0/angular-jwt */ 467);
+/* harmony import */ var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @auth0/angular-jwt */ 4467);
 
 
 class AuthService {
@@ -1821,6 +1951,9 @@ class StudySessionService {
   }
   getSummary() {
     return this.httpClient.get(`${this.appConfigService.baseUrl}${this.controller}/Summary`);
+  }
+  deleteSession(studySessionId) {
+    return this.httpClient.delete(`${this.appConfigService.baseUrl}${this.controller}/${studySessionId}`);
   }
 }
 StudySessionService.ɵfac = function StudySessionService_Factory(t) {

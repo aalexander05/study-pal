@@ -1,13 +1,9 @@
 using ProjectPal.Data;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
-using ProjectPal.Queries;
-using ProjectPal.Commands;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using ProjectPal;
 

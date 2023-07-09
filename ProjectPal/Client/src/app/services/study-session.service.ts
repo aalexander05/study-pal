@@ -41,6 +41,10 @@ export class StudySessionService {
     return this.httpClient.get<StudySummary>(`${this.appConfigService.baseUrl}${this.controller}/Summary`)
   }
 
+  deleteSession(studySessionId: number): Observable<void> {
+    return this.httpClient.delete<void>(`${this.appConfigService.baseUrl}${this.controller}/${studySessionId}`);
+  }
+
 
 
 }

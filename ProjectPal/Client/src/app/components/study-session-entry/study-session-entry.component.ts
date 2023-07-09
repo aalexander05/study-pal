@@ -1,5 +1,5 @@
 import { HttpErrorResponse, HttpStatusCode } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { StudySessionView } from 'src/app/Dtos/studySessionView';
@@ -14,6 +14,8 @@ import { StudySessionService } from 'src/app/services/study-session.service';
 export class StudySessionEntryComponent implements OnInit {
   sessionForm!: FormGroup;
   errorContainer: ErrorContainer = new ErrorContainer();
+  showModal: boolean = false;
+
 
   constructor(private sessionService: StudySessionService,
     private router: Router,
@@ -72,6 +74,33 @@ export class StudySessionEntryComponent implements OnInit {
 
   requiredAndTouched(control: AbstractControl) {
     return control.hasError("required") && control.touched;
+  }
+
+  isUpdate(): boolean {
+    return this.sessionForm?.controls['studySessionId'].value > 0;
+  }
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  handleModalClose(deleteSession: boolean) {
+    this.showModal = false;
+
+    if (deleteSession) { 
+      this.deleteStudySession();
+    }
+  }
+
+  deleteStudySession() {
+    this.sessionService.deleteSession(this.sessionForm.controls['studySessionId'].value).subscribe({
+      next: res => {
+        this.router.navigate(["summary"]);
+      },
+      error: (error: HttpErrorResponse) => {
+        handleError(error, this.errorContainer);
+      }
+    });
   }
 
 }
