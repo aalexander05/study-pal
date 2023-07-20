@@ -5,7 +5,11 @@ export function handleError(error: HttpErrorResponse, errorContainer: ErrorConta
     console.error(error);
     errorContainer.httpError = error;
     if (error.status === HttpStatusCode.BadRequest) {
-        errorContainer.errorMessage = 'There was a problem submitting your request. Check your entries and try again.'
+        if (typeof error.error === 'string') {
+            errorContainer.errorMessage = error.error;
+        } else {
+            errorContainer.errorMessage = 'There was a problem submitting your request. Check your entries and try again.'
+        }
     } else if (error.status === HttpStatusCode.Unauthorized) {
         errorContainer.errorMessage = "You are unauthorized. Try logging in."
     } else if (error.status === HttpStatusCode.InternalServerError) {

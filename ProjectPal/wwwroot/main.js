@@ -419,7 +419,11 @@ function handleError(error, errorContainer) {
   console.error(error);
   errorContainer.httpError = error;
   if (error.status === 400 /* HttpStatusCode.BadRequest */) {
-    errorContainer.errorMessage = 'There was a problem submitting your request. Check your entries and try again.';
+    if (typeof error.error === 'string') {
+      errorContainer.errorMessage = error.error;
+    } else {
+      errorContainer.errorMessage = 'There was a problem submitting your request. Check your entries and try again.';
+    }
   } else if (error.status === 401 /* HttpStatusCode.Unauthorized */) {
     errorContainer.errorMessage = "You are unauthorized. Try logging in.";
   } else if (error.status === 500 /* HttpStatusCode.InternalServerError */) {
@@ -1227,7 +1231,7 @@ DeleteSessionModalComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 1);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2)(3, "div", 3)(4, "p", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Are you sure you want to delete this study session?");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Are you sure you want to delete this study session? Deleting a session cannot be undone.");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 5)(7, "div", 6)(8, "div", 7)(9, "button", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DeleteSessionModalComponent_Template_button_click_9_listener() {

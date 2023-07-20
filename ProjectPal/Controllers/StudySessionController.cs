@@ -78,7 +78,13 @@ public class StudySessionController : ControllerBase
     {
         if (studySessionView == null)
         {
-            return BadRequest();
+            return BadRequest("The request was not provided.");
+        }
+
+        // egg
+        if (studySessionView.Topic.Trim().ToLower() == "freeform jazz")
+        {
+            return BadRequest("Request rejected. Why would you be into freeform jazz? Who are you? Patrick Star? https://www.youtube.com/watch?v=M4sEcIHG0Yc");
         }
 
         string userName = User?.Identity?.Name ?? throw new System.Exception("No user found");
