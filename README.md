@@ -1,8 +1,31 @@
-# Study pal
+# Study Pal
+
+### About
+
+This is an application meant to track one's own personal progress on how much they've studied on any subject they are interested in.
+
 
 A live demo example is hosted in an Azure App Service and can be viewed here:
 
 [https://projectpalapp2.azurewebsites.net/](https://projectpalapp2.azurewebsites.net/)
+
+
+### Features
+- There's a simple form to enter into the system what and when you studied and for how long:
+
+![image](https://github.com/aalexander05/study-pal/assets/29714952/2156c323-ccca-4b66-bc6c-91655185733e)
+
+
+- There is a summary screen that shows the total minutes studied (within the period of the last month), and the most studied subjects by the user:
+
+![image](https://github.com/aalexander05/study-pal/assets/29714952/39364f3c-ab64-4756-ad13-886e551d137a)
+
+- There's a list that allow the user to view all their study sessions:
+
+![image](https://github.com/aalexander05/study-pal/assets/29714952/4c2c4d6e-dfde-4354-89e7-893a1ee5ffa2)
+
+
+
 
 
 This is a full stack web application using the following technologies:
