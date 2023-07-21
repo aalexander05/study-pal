@@ -1,6 +1,6 @@
 # Study pal
 
-Live demo example is hosted in an Azure App Service and can be viewed here:
+A live demo example is hosted in an Azure App Service and can be viewed here:
 
 [https://projectpalapp2.azurewebsites.net/](https://projectpalapp2.azurewebsites.net/)
 
