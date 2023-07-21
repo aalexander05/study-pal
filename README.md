@@ -43,7 +43,7 @@ This is a full stack web application using the following technologies:
 - ~.NET v6 SDK
 
 ### To run the project locally:
-- In a terminal navigate to [the front-end project directory](https://github.com/aalexander05/study-pal/tree/study-session/ProjectPal/Client).
+- In a terminal, navigate to [the front-end project directory](https://github.com/aalexander05/study-pal/tree/study-session/ProjectPal/Client).
 - Run `npm run watch`
   - This will build the front-end and put the distributable files in the wwwroot folder of the API project.
 - Run the API project with an IDE like Visual Studio, or with the dotnet CLI command `dotnet run`
