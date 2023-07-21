@@ -38,7 +38,7 @@ This is a full stack web application using the following technologies:
 
 
 
-### Current versions of tools being used for development of this project:
+### Versions of tools currently being used for development of this project:
 - Node v16.15.0
 - ~.NET v6 SDK
 
